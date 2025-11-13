@@ -8,6 +8,7 @@ public class Empleados
 		int [] horas=new int[numeroEmpleados];
 		int horastrabajadas=0;
 		int i;
+		double suma=0;
 
 		System.out.println("Longitud de la array: "+numeroEmpleados);
 		for(i=0;i<numeroEmpleados;i++)
@@ -20,10 +21,11 @@ public class Empleados
 		}
 		for(i=0;i<numeroEmpleados;i++)
 		{
-			horastrabajadas+=horas[i];
-			System.out.println("Empleado: "+nombres[i]+" Horas trabajadas: "+horas[i]);
-			System.out.println("promedio de horas trabajadas: "+horastrabajadas/numeroEmpleados);
+			suma=suma+horas[i];
+			System.out.println("Empleado "+(i+1)+": "+nombres[i]+" Horas trabajadas: "+horas[i]+" Se le pagara: "+(horas[i]*50)+" Pesos");
+			
 		}
+		System.out.printf("promedio de horas trabajadas: %.2f",suma/numeroEmpleados);
 
 		
 	}
