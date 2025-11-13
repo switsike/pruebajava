@@ -20,10 +20,16 @@ public class EmpleadosV2 {
 			horas[i]=sc.nextInt();
 			sc.nextLine();
 		}
+        for(i=0;i<numeroEmpleados;i++)
+        {
+            suma=suma+horas[i];
+        }
+            promedio=suma/numeroEmpleados;
+
+        promedio=suma/numeroEmpleados;
 		for(i=0;i<numeroEmpleados;i++)
 		{
-			suma=suma+horas[i];
-            promedio=suma/numeroEmpleados;
+			
 			System.out.println("Empleado "+(i+1)+": "+nombres[i]+" Horas trabajadas: "+horas[i]+" Se le pagara: "+(horas[i]*50)+" Pesos");
             if(horas[i]>promedio){
             c++;
