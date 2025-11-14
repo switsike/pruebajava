@@ -38,5 +38,6 @@ public class EmpleadosV2 {
 		}
 		System.out.printf("promedio de horas trabajadas: %.2f", promedio);
         System.out.println("\nCantidad de empleados que superan el promedio de horas trabajadas: " + c);
+        sc.close();
     }
 }
