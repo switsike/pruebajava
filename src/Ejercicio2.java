@@ -8,11 +8,27 @@ public class Ejercicio2 {
         int cantidad=sc.nextInt();
         for(int i=0;i<monedas.length;i++)
         {
-            if(cantidad%monedas[i]==0)
+            if(cantidad%monedas[0]==0)
             {
-                mil++;
+                mil=cantidad/monedas[0];
+                cantidad=cantidad-(mil*monedas[0]);
             }
-            System.out.println("Se necesitan "+mil+" monedas de "+monedas[i]+" pesos");
+            else if(cantidad%monedas[i]==0)
+            {
+                mil=cantidad/monedas[i];
+                cantidad=cantidad-(mil*monedas[i]);
+            }
+            else
+            {
+                mil=cantidad/monedas[i];
+                cantidad=cantidad-(mil*monedas[i]);
+            }
+            if(monedas[i]>=20){
+            System.out.println("Se necesitan "+mil+" Billetes de "+monedas[i]+" pesos");
+            }
+            else{
+            System.out.println("Se necesitan "+mil+" Monedas de "+monedas[i]+" pesos");
+            }
            
 
         }
