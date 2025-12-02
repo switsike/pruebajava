@@ -1,9 +1,9 @@
 public class Ejercicio4 {
     public static void main(String[]args)
     {
-        int[] leche={3,2,1};
+        int[] leche={50,50,50};
         int[] panales={3,2,1};
-        int[] cerveza={3,0,1};
+        int[] cerveza={3,0,0};
         int[] sumatotaldia=new int[3];
         int max=-1;
         int men=0;
@@ -37,7 +37,7 @@ public class Ejercicio4 {
             }
         }
         System.out.println("El dia que hubo mas ventas fue el dia "+diamax);
-        System.out.println("El dia que hubo menos ventas fue el dia "+men);
+        System.out.println("El dia que hubo menos ventas fue el dia "+sumamen);
         System.out.println("Total de ventas de cada producto en el mes del producto leche: "+sumaleche);
         System.out.println("Total de ventas de cada producto en el mes del producto cerveza: "+sumacer);
         System.out.println("Total de ventas de cada producto en el mes del producto pañales: "+sumapan);
