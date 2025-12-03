@@ -1,4 +1,4 @@
-public class Ejercicio5 {
+public class ArregloAlumnos {
 	public static void main(String[]args)
 	{
 		String[] alumnos= {"Pablo","Margo","Juliana","Melissa","Pedro"};

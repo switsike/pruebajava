@@ -1,10 +1,13 @@
-public class Ejercicio4 {
+import java.util.Random;
+public class VentasPorMes {
     public static void main(String[]args)
     {
-        int[] leche={50,50,50};
-        int[] panales={3,2,1};
-        int[] cerveza={3,0,0};
-        int[] sumatotaldia=new int[3];
+        int cant=51;
+        Random rd=new Random();
+        int[] leche=new int[31];
+        int[] panales=new int[31];
+        int[] cerveza=new int[31];
+        int[] sumatotaldia=new int[31];
         int max=-1;
         int men=0;
         int sumaleche=0;
@@ -12,6 +15,14 @@ public class Ejercicio4 {
         int sumapan=0;
         int diamax=0;
         int sumamen=0;
+
+        for(int i=0;i<leche.length;i++)
+        {
+            leche[i]=rd.nextInt(51);
+            panales[i]=rd.nextInt(51);
+            cerveza[i]=rd.nextInt(51);
+        }
+
         for(int i=0;i<leche.length;i++)
         {
             sumatotaldia[i]=leche[i]+panales[i]+cerveza[i];

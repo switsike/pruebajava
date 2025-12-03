@@ -1,5 +1,5 @@
 import java.util.Random;
-public class Ejercicio3 {
+public class NumeroRepetidos {
     public static void main(String[] args) {
         Random random=new Random();
         int[] numeros=new int[500];

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ejercicio2 {
+public class Billetes {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int[] monedas = {1000, 500, 200, 100, 50, 20, 10, 5, 2, 1};
