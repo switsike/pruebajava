@@ -2,7 +2,6 @@ import java.util.Random;
 public class VentasPorMes {
     public static void main(String[]args)
     {
-        int cant=51;
         Random rd=new Random();
         int[] leche=new int[31];
         int[] panales=new int[31];
